@@ -2,8 +2,8 @@ import java.util.*;
 
 public class Main {
     public static void checkP(int p)throws Exception{
-        if(p<0){
-            throw new Exception("only Postive number");
+        if(p<=0||p>9){
+            throw new Exception("the number is Out of Boundry");
         }}
     static ArrayList<Integer>playp=new ArrayList<>();
     static ArrayList<Integer>Cpp=new ArrayList<>();
@@ -53,8 +53,6 @@ public class Main {
              case 9:
             game[4][4] = symbol;
              default:
-                 if(p>9){
-       System.out.println("the number you choose is Out Of Boundry.");}
                  break;
             }
     }
